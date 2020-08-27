@@ -1,24 +1,23 @@
 # don't forget to add: require 'pry'
-
 def get_user_input
   gets.chomp
 end
 
 def prompt_user
-  puts "What would you like to do?"
-  puts "1.) Eat a hamburger."
-  puts "2.) Eat a ham."
+ "What would you like to do?"
+  "1.) Eat a hamburger."
+  "2.) Eat a ham."
 end
 
 def selection(num)
-  if num = 1
-     "YUM YUM MUNCH MUNCH MUNCH"
-  elsif num = 2
-     "HAM HAM HAM IN MY TUMMY"
-  end
+  if num == 1 
+   return "YUM YUM MUNCH MUNCH MUNCH"
+  elsif num == 2
+    return "HAM HAM HAM IN MY TUMMY"
+  end 
 end
 
-def runner
+def runner 
   prompt_user
-  selection(get_user_input)
+  selection(num)
 end
